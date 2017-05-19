@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ---- GENERAL ---- */
+
+html, body{
+	width: 100%;
+	height: 100%;
+	min-width:980px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+body{
+	background: url(../img/body.jpg) top center repeat-y;
+	font-size: 0.8em;
+	line-height: 170%;
+	font-family:"Verdana", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Osaka‐等幅";
+}
+
+div{
+	position: relative;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+img{
+	display: block;
+	border: 0;
+}
+
+a{
+	color: #0097e0;
+}
+
+a:hover, a:focus{
+	color: #00004C;
+	outline: none;
+}
+
+p{
+	margin: 4px 0px 15px 0px;
+}
+
+.clear:after{
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clear{
+    display: inline-table; /* opera */
+}
+
+#content h4.red,
+#content dd.red,
+.red {
+	color: #C06;
+}
+
+
+/* ---- COMMON ---- */
+
+#wrapper{
+	width:100%;
+	height:auto;
+	min-width:980px;
+	min-height:1300px;
+	background: transparent url(../../common/img/background.jpg) top center no-repeat;
+	overflow-x:hidden;
+	padding-bottom: 80px;
+}
+
+#wrapper > div{
+	width: 980px;
+}
+
+#main{
+	z-index: 15;
+	margin: -30px auto 0px auto;
+	padding-bottom:50px;
+}
+
+#main:after{
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+
+
+/* ---- HEADER & GLOBAL MENU ---- */
+
+#header{
+	z-index: 50;
+	width: 100%;
+	min-width: 980px;
+	height: 270px;
+	margin: 0px auto 0px auto;
+}
+
+#header #logo{
+	position:relative;
+	top: 74px;
+	left: 55px;
+	margin: 0px 0px 0px 0px;
+	background: transparent url(../../common/img/nana_party.png) top center no-repeat;
+}
+
+#header #logo, #header #logo a{
+	width: 215px;
+	height: 133px;
+}
+
+#header #logo a{
+	display: block;
+	margin: 0px 0px 0px 0px;
+	padding:  0px 0px 0px 0px;
+	text-indent: -9999px;
+}
+
+#header ul{
+	position: absolute;
+	top: 114px;
+	right: 0px;
+}
+
+#header ul li{
+	float: left;
+	height: 46px;
+	margin: 0px 0px 0px 40px;
+	background-position: left top;
+	list-style:none;
+}
+
+#header ul li a{
+	text-indent:-9999px;
+	display: block;
+	width: inherit;
+	height: inherit;
+}
+
+#header ul li.news{
+	width: 72px;
+	background: url(../../common/img/menu/menu_news.gif) no-repeat;
+}
+#header ul li.profile{
+	width: 84px;
+	background: url(../../common/img/menu/menu_profile.gif) no-repeat;
+}
+#header ul li.discography{
+	width: 129px;
+	background: url(../../common/img/menu/menu_discography.gif) no-repeat;
+}
+#header ul li.blog{
+	width: 62px;
+	background: url(../../common/img/menu/menu_blog.gif) no-repeat;
+}
+#header ul li.fanclub{
+	width: 108px;
+	background: url(../../common/img/menu/menu_fanclub.gif) no-repeat;
+}
+#header ul li:hover{
+	background-position: left bottom;
+}
+
+/* footer */
+
+#footer_inner ul{
+	list-style:none;
+	margin: 0px 0px 0px 0px;
+}
+
+#footer_inner li{
+	height: 12px;
+	float: left;
+	padding: 0px 5px 0px 5px;
+}
+
+#footer_inner a{
+	text-decoration: none;
+}
+
+#footer_inner a:hover{
+	text-decoration: underline;
+}
+

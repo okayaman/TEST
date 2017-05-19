@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head>
+<meta charset="utf-8" />
+<meta name="robots" content="index,follow" />
+<meta name="description" content="" />
+<meta name="keywords" content="水樹奈々,ライブジパング２０１７,LIVE ZIPANGU 2017,NANA,NANA MIZUKI" />
+<meta name="viewport" content="width=420" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<title>NANA MIZUKI LIVE ZIPANGU 2017</title>
+<link rel="shortcut icon" type="image/x-icon" href="icon.ico" />
+
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="css/import.css">
+
+<!--JS-->
+<script src="js/jquery-1.11.2.min.js" charset="utf-8"></script>
+<script src="js/jquery.easing-1.3.min.js" charset="utf-8"></script>
+<script src="js/jquery.mousewheel.min.js" charset="utf-8"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js" charset="utf-8"></script>
+
+
+<!--[if lt IE 9]>
+
+<script src="js/html5shiv.js"></script>
+
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+
+<![endif]-->
+
+<script type="text/javascript">
+$(function(){
+  var hs = ['all', 'ticket', 'goods', 'etc'];
+  var s = function(c) {
+    location.hash = c;
+
+    $('div.secNews').each(function(i) {
+      if (hs.indexOf(c) != -1) {
+        if (c != 'all') {
+          $(this).hide().filter('.'+c+'').show();
+        } else {
+          $(this).show();
+        }
+      }
+    });
+  };
+
+  $(window).on({
+    load : function() {
+      var h = location.hash;
+      if (h) {
+        s(h.substr(1));
+      }
+    }
+  });
+
+  $('.sorter').on({
+    click : function(e) {
+      e.preventDefault();
+      $(this).get(0).className.split(' ').map(function(c) {
+        var m = c.match(/btn\_(.*)/i);
+        if (m instanceof Array && m.length > 1) {
+          s(m.pop());
+        }
+      });
+    }
+  });
+  
+  $('a[href="news.html#ticket"]').on('click', function() {
+    setTimeout(function(){
+      window.scrollTo(0,0);
+      location.reload();
+    },0);
+  });
+  
+});
+
+
+<!--フレームアニメーション-->
+
+$(function(){
+    $('.hBG').frameAnimation({
+        setWidth: 89,
+        frameSpeed: 200,
+        maxFrame: 6,
+        loop: true
+    });
+});
+</script>
+
+</head>
+
+<body id="newsPage">
+<div class="sp spbg"></div>
+
+<section id="top">
+  <div id="pTitle"><h1>NANA MIZUKI LIVE ZIPANGU 2017</h1></div>
+  <div class="headerLine"><div class="headerLineDeco"></div></div>
+  <div id="topMainBlock">
+      <img src="img/top/topmain01.jpg" title="LIVE ZIPANGU 2017" />
+  </div>
+</section>
+<nav id="mNavi">
+<div class="navbar-wrapper">
+      <div class="container">
+      <div class="navwrapper">
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <div class="navLine">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </div>
+                <div class="navTxt">MENU</div>
+              </button>
+            </div>
+            <div class="navbar-collapse collapse">
+  <ul class="nav navbar-nav">
+  	<li id="navi_top"><a href="index.html">トップ</a></li>
+  	<li id="navi_news"><a href="news.html">ニュース</a></li>
+  	<li id="navi_schedule"><a href="schedule.html">スケジュール</a></li>
+    <li id="navi_ticket"><a href="news.html#ticket">チケット</a></li>
+    <li id="navi_goods"><a href="goods.html">グッズ</a></li>
+    <li id="navi_attention"><a href="attention.html">ご来場される皆様へ</a></li>
+  </ul>
+  </div></div>
+          </div>
+        </div> 
+      </div><!-- End Navbar -->
+</nav>
+
+<!--　Contents BLOCK　-->
+
+<section class="pg" id="contents" name="news">
+  <div id="contentsBlock" class="wrapper wrap">
+
+  
+  
+    <article class="contentsFrame">
+      <div class="contentsBox">
+      <h2><div class="hBG pc"></div><img src="./img/h_news_pc.png" alt="ニュース" id="newsHBlock"  class="js-image-switch"/><img src="./img/h_ticket_pc.png" alt="チケット" id="ticketHBlock" class="js-image-switch"/></h2>
+      <div id="newsHBlock" class="wrapper wrap newsSort">
+    	<ul>
+      		<li class="sort_all"><a href="void(0)" class="sorter btn_all"><img src="./img/sort_all_pc.png" alt="全表示"  class="js-image-switch"/>全て ▶︎</a></li>
+      		<li class="sort_ticket"><a href="void(0)" class="sorter btn_ticket"><img src="./img/sort_ticket_pc.png" alt="チケット"  class="js-image-switch"/>チケット ▶︎</a></li>
+      		<li class="sort_goods"><a href="void(0)" class="sorter btn_goods"><img src="./img/sort_goods_pc.png" alt="グッズ"  class="js-image-switch"/>グッズ ▶︎</a></li>
+      		<li class="sort_etc"><a href="void(0)" class="sorter btn_etc"><img src="./img/sort_etc_pc.png" alt="その他"  class="js-image-switch"/>その他 ▶︎</a></li>
+    	</ul>
+      </div>       
+        
+        <!--チケット
+        <div id="news003" class="secNews ticket">
+          <div class="newsInner">
+            <ul class="post">
+              <li>
+                <dl>
+                  <dt class="topic">タイトル
+                    <div class="day">2016/12/7</div>
+                  </dt>
+                  <dd class="detail">
+                    〇〇〇
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+        /チケット-->
+      
+        <!--#news002-->      
+        <div id="news002" class="secNews etc">
+          <div class="newsInner">
+            <ul class="post">
+              <li>
+                <dl>
+                  <dt class="topic">LIVE ZIPANGU 2017　特設サイト公開
+                    <div class="day">2016/12/7</div>
+                  </dt>
+                  <dd class="detail">
+                    <p>「LIVE ZIPANGU 2017　特設サイト」を公開しました。</p>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--/#news002-->
+        
+        <!--#news001-->        
+        <div id="news001" class="secNews goods">
+          <div class="newsInner">
+            <ul class="post">
+              <li>
+                <dl>
+                  <dt class="topic">「NANA MIZUKI LIVE ZIPANGU 2017」愛知公演グッズ前日販売のお知らせ
+                    <div class="day">2016/12/2</div>
+                  </dt>
+                  <dd class="detail">
+                    <p>愛知・日本ガイシホール公演開催前日の1月6日（金）にも、グッズ販売を行います。詳細は追って発表いたします。<br>
+※グッズラインナップは1月7日（土）と同じものを予定しております。</p>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--/#news001--> 
+        
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<!--===LIVE ZIPANGU TITLE MINI===-->
+<p id="ttl-sp" class="imgHover sp"><a href="#page"><img src="./img/title_sp2.png" alt="LIVE ZIPANGU" /></a></p>
+
+<!--===FooterArea===-->
+<footer>
+  <!--goTOP-->
+  <p id="page-top" class="imgHover"><a href="#page">PAGE TOP >></a></p>
+  <div class="footerLineDeco"></div>
+  <div class="footerCnt">
+    <div class="ftR">
+      <ul class="ftBnr">
+        <li><a href="http://www.kingrecords.co.jp/cs/default.aspx" target="_blank"><img src="./img/footer_bnr_king.png" width="105" height="32" alt="KING RECORDS" /></a></li>
+        <li class="sigma"><a href="http://www.sigma7.co.jp" target="_blank"><img src="./img/footer_bnr_sigma.png" width="62" height="32" alt="株式会社シグマ・セブン" /></a></li>
+        <li><a href="http://fanclub.mizukinana.jp" target="_blank"><img src="./img/footer_bnr_nananet.png" width="103" height="32" alt="S.C. NANA NET" /></a></li>
+        <li><a href="http://www.mizukinana.jp" target="_blank"><img src="./img/footer_bnr_nanaParty.png" width="300" height="36" alt="NANA PARTY" /></a></li>
+      </ul>
+    </div>
+    <div>
+    <div class="ftL"> <img src="./img/footer_logo.png" alt="NANA MIZUKI LIVE ZIPANGU 2017" />
+      <ul class="ftNav">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="news.html">ニュース</a></li>
+        <li><a href="schedule.html">スケジュール</a></li>
+        <li><a href="news.html#ticket">チケット</a></li>
+        <li><a href="goods.html">グッズ</a></li>
+        <li><a href="attention.html">ご来場される皆様へ</a></li>
+      </ul>
+      <p class="att">当ウェブサイトに記載されている画像・テキストの無断複製・転載・加工を禁じます。</p>
+      <p class="copyright">&copy; <script language="JavaScript" type="text/javascript">year(); </script> KING RECORDS.CO.,LTD. ALL RIGHTS RESERVED.</p>
+    </div>
+  </div>
+</footer>
+
+
+<!--===Decoration===-->
+<div id="decorationBlock">
+	<div id="Deco-contentL">
+		<div class="decoL01 pngfix"></div>
+        <div class="decoL02 pngfix"></div>
+	</div>
+    <div id="Deco-contentR">
+    	<div class="decoR01 pngfix"><div class="butterflyR"></div></div>
+	</div>
+</div>
+<div id="decorationBGblock">
+	<div id="Bg-content">
+		<div class="bgdecoR01 pngfix"></div>
+        <div class="bgdecoR02 pngfix"><div class="butterflyR"></div></div>
+        <div class="bgdecoR03 pngfix"></div>
+        <div class="bgdecoR04 pngfix"><div class="butterflyR"></div></div>
+        <div class="bgdecoR05 pngfix"></div>
+        <div class="bgdecoR06 pngfix"><div class="butterflyR"></div></div>
+        <div class="bgdecoR07 pngfix"></div>
+        <div class="bgdecoR08 pngfix"><div class="butterflyR"></div></div>
+        <div class="bgdecoR09 pngfix"></div>
+        <div class="bgdecoR10 pngfix"><div class="butterflyR"></div></div>
+        <div class="bgdecoR11 pngfix"></div>
+    	<div class="bgdecoL01 pngfix"><div class="butterflyL"></div></div>
+        <div class="bgdecoL02 pngfix"></div>
+        <div class="bgdecoL03 pngfix"><div class="butterflyL"></div></div>
+        <div class="bgdecoL04 pngfix"></div>
+        <div class="bgdecoL05 pngfix"><div class="butterflyL"></div></div>
+        <div class="bgdecoL06 pngfix"></div>
+        <div class="bgdecoL07 pngfix"><div class="butterflyL"></div></div>
+        <div class="bgdecoL08 pngfix"></div>
+        <div class="bgdecoL09 pngfix"><div class="butterflyL"></div></div>
+        <div class="bgdecoL10 pngfix"></div>
+	</div>
+</div>
+
+</body>
+</html>

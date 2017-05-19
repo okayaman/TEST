@@ -1,0 +1,175 @@
+/* ================================================================ *
+ *  MENU
+ * ================================================================ */
+
+/* ------------------------------------------------ common */
+
+
+/* ------------------------------------------------ drawer menu */
+.drawer-menu {
+	margin-top: 159px;
+	margin-left: 55px;
+	z-index: 99999;
+	/*visibility:hidden;
+	display: none;*/	
+}
+
+.drawer-menu .mlogo {
+	display: none;
+}
+
+.drawer-menu li {
+	float: left;
+	margin-left: 45px;
+	display: block;
+}
+.drawer-menu li:first-child {
+	margin-left: 0px;
+}
+.drawer-menu li a {
+	display: block;
+}
+
+.drawer-menu a span { 
+	visibility: hidden; 
+} 
+.menu1 a {
+	background-image: url(../img/menu/menu_news.png);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 55px;
+}
+.menu2 a {
+	background-image: url(../img/menu/menu_schedule.png);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 96px;
+}
+.menu3 a {
+	background-image: url(../img/menu/menu_discography.png);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 234px;
+}
+
+.menu4 a {
+	background-image: url(../img/menu/menu_biography.png);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 111px;
+}
+.menu5 a {
+	background-image: url(../img/menu/menu_blog.png);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 51px;
+}
+.menu6 a {
+	background-image: url(../img/menu/menu_fanclub.png);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 84px;
+}
+
+
+
+
+
+/* ----------------------------------------------- *
+ * 【TOP】SocialBtn
+ * ----------------------------------------------- */
+.drawer-menu li.menu7 h2 {
+	display:none;
+}
+
+.drawer-menu li.menu7 {
+	margin-left: 40px;
+	margin-top: -2px;
+	height: 26px;
+	width: 70px;
+}
+.social1 {
+	margin-right: 7px;
+	float: left;
+}
+.social2 {
+	float: left;
+}
+/* ----------------------------------------------- *
+ * 【TOP】LANGUAGE
+ * ----------------------------------------------- */
+.drawer-menu li.menu8 {
+	display:none;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------ checkbox */
+.check {
+	display: none;
+}
+
+/* ------------------------------------------------ menu button */
+.menu-btn {
+	display: none;
+}
+/* ------------------------------------------------ checked */
+.close-menu {
+	display: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-height:680px) {
+/* ================================================================ *
+ * NEWS (TICKET)
+ * ================================================================ */
+ 
+
+
+}
+@media screen and (max-height:960px) {
+	
+/* ------------------------------------------------ drawer menu */
+.drawer-menu {	
+	margin-top: 125px;
+	margin-left: 35px;
+}
+
+.drawer-menu li {
+	margin-left: 30px;
+}
+
+
+
+
+/* ----------------------------------------------- *
+ * 【TOP】SocialBtn
+ * ----------------------------------------------- */
+.drawer-menu li.menu7 {
+	margin-left: 10px;
+	margin-top: -2px;
+	height: 26px;
+	width: 60px;
+}
+.drawer-menu li.menu7 img {
+	width: 28px;
+}
+.social1 {
+	margin-right: 3px;
+	float: left;
+}
+.social2 {
+	float: left;
+}
+
+
+}

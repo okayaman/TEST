@@ -1,0 +1,11 @@
+/* CSS Document */
+
+
+#wrapper{
+	background: transparent url(../../common/img/ipad/background.jpg) top center no-repeat;
+}
+
+#footer_inner p{
+	font-size: 0.6em;
+	line-height: 140%;
+}

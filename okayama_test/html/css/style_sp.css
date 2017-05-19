@@ -1,0 +1,633 @@
+/* ================================================================ *
+ *  Mobile
+ * ================================================================ */
+ 
+@media screen and (max-width:760px) {
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.sp {
+	display: inline-block;
+}
+.pc {
+	display: none;
+}
+.tbl .cel {
+	width: 100%;
+}
+.tbl .cel {
+	width: 100% !important;
+	text-align: center;
+	margin-bottom: 10px;
+	float: left;
+}
+.spbg {
+	display: block;
+	position: fixed;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-repeat : no-repeat;
+	background-size : 100% 100%;
+	top : 0;
+	left : 0;
+	right : 0;
+	bottom : 0;
+}
+.small {
+	font-size: 70%;
+}
+
+
+/*改行_SPのみ*/
+.br-sp {
+	display: inline;
+}
+
+/*右寄せ_SPのみ*/
+.right_sp {
+	float: right;
+}
+
+
+/* ================================================================ *
+ * Base Block
+ * ================================================================ */
+
+#wrapper {
+	background: url(../img/sp_bg.jpg);
+}
+
+#header {
+	width: 100%;
+	height: 100px;
+	padding-top: 5px;
+	position: absolute;
+	z-index:2;
+}
+#contents {
+	width: 100%;
+	/*height: auto;*/
+	position: relative;
+	margin-bottom: 0px;
+	background-image: none;
+	position: relative;
+	padding-top: 60px;
+}
+
+
+/* ================================================================ *
+ * HEADER
+ * ================================================================ */
+
+/*--タイトル-------------------------*/
+#header #logo {
+	background-image: url(../img/sp_title.png);
+	background-size : 100% auto;
+	background-position: center;
+	position: relative;
+	width: 40%;
+	height: 100%;
+	max-width:400px;
+	width:80%;
+	top: auto;
+	left: auto;
+	right: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-left: auto;
+}
+
+/*--メニューブロック-------------------------*/
+#menuBlock {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	z-index: 2;
+	background-color: #3F6;
+}
+
+
+
+/* ============================================
+	MAIN NAVI
+============================================ */
+
+
+
+/* ================================================================ *
+ * TOP
+ * ================================================================ */
+#topArea {
+	margin: 0;
+	/*max-height: 680px;
+	min-height: 100px;
+	height: 100%;*/
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 0;
+	width: 100%;
+}
+
+/* ----------------------------------------------- *
+ * 【TOP】MainPhoto
+ * ----------------------------------------------- */
+
+#topArea #topMainBlock {
+	width: 100%;
+	height: auto;
+	padding-top: 0px;
+	top: auto;
+	left: auto;
+	border-top-width: 3px;
+	border-bottom-width: 3px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #796B33;
+	border-bottom-color: #796B33;
+}
+/*スライドショー*/
+#topArea .bxslider {
+	width: 100%;
+	height: 100%;
+}
+
+.topOfficial {
+	padding: 5px;
+	margin-bottom: 20px;
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+/* ----------------------------------------------- *
+ * 【TOP】見出し
+ * ----------------------------------------------- */
+
+/*TOPICS / PICKUP / MOVIE*/
+/*見出し背景*/
+#topTopicsBlock h2,
+#topPickupBlock h2,
+#topMoviesBlock h2 {
+	background-image: url(../img/sp_h_bg.png);
+	background-size : auto 100%;
+	background-position: center;
+	background-repeat: repeat-x;
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-top: -10px;
+}
+/*見出し共通設定*/
+#topTopicsBlock h2 .hName,
+#topPickupBlock h2 .hName,
+#topMoviesBlock h2 .hName {
+	background-size : auto 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	height: 50px;
+	padding: 0px;
+	margin-bottom: 0px;
+	z-index:1;
+}
+#topTopicsBlock h2 .hName {
+	background-image: url(../img/sp_h_topics.png);
+}
+#topPickupBlock h2 .hName {
+	background-image: url(../img/sp_h_pickup.png);
+}
+#topMoviesBlock h2 .hName {
+	background-image: url(../img/sp_h_movies.png);
+}
+
+
+/* ----------------------------------------------- *
+ * 【TOP】TOPICS
+ * ----------------------------------------------- */
+
+#topTopicsBlock {
+	background-image: none;
+	position: relative;
+	width: 100%;
+	height: auto;
+	right: auto;
+	top: auto;
+	margin: 0px;
+	padding: 0px;
+	background-color: rgba(255,255,255,0.6);
+}
+.topinfoBox {
+	background-image: none;
+	width: 100%;
+	height: auto;
+}
+
+#topTopicsBlock  .hName {
+	top: 0px;
+}
+
+
+.topinfoBox .topicInner {
+	width: 95%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-bottom: 50px;
+}
+.topinfoBox .topicInner dl {
+	width: 98%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.topinfoBox .topicInner dt {
+	font-size: 100%;
+}
+.topinfoBox .topicInner dd {
+	font-size: 100%;
+}
+/* カテゴリ*/
+.topinfoBox .category {
+	font-size: 90%;
+}
+
+/* ----------------------------------------------- *
+ * 【TOP】PICKUP
+ * ----------------------------------------------- */
+
+#topPickupBlock {
+	position: relative;
+	top: auto;
+	left: auto;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #161E5F;
+	padding-bottom: 20px;
+}
+
+#topPickupBox {
+	position: relative;
+	padding-bottom: 20px;
+	width: 210px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#topPickupBox .bxslider {
+	position: relative;
+	width: 210px;
+	height: 333px;
+	left: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+  #topPickupBox {
+    height: 333px;
+  }
+ #topPickupBox  .bx-viewport {
+    overflow: visible!important;
+    width: 210px!important;
+  }
+ #topPickupBox  .main-container { // 一番外側の枠
+    overflow: hidden;
+    padding-bottom: 150px;
+  }
+ #topPickupBox  .slider {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #topPickupBox .slider li {
+    width: 800px!important;
+    margin: 0;
+    padding: 0;
+  }
+
+#slideFilterL, #slideFilterR {
+	position: absolute;
+	top: 0;
+	width: 400px;
+	height: 285px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	-ms-filter: "alpha( opacity=50 )";
+	background: #161E5F;
+	margin-top: 47px;
+}
+#slideFilterL {
+	right: 50%;
+	margin-right: 105px;
+}
+#slideFilterR {
+    left:50%;
+	margin-left:105px; 
+}
+
+
+
+
+
+
+
+/* ----------------------------------------------- *
+ * 【TOP】MOVIE
+ * ----------------------------------------------- */
+#topMoviesBlock {
+	position: relative;
+	width: 100%;
+	top: auto;
+	right: auto;
+	background-color: rgba(255,255,255,0.6);
+	padding-bottom: 20px;
+}
+
+#topMoviesBlock .moviesBox {
+	width: 255px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -15px;	
+}
+
+#topMoviesBlock .moviesBox .moviesFrame {
+}
+#topArea #topMoviesBlock .mv_caption {
+	visibility: visible;
+	text-align: center;
+	line-height: 1.2em;
+	margin-top: 40px;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#topArea #topMoviesBlock .mv_more {
+	visibility: visible;
+	text-align: right;
+	display: block;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+
+
+/* ----------------------------------------------- *
+ * 【TOP】Banner
+ * ----------------------------------------------- */
+ 
+#topBannerBlock {
+	position: relative;
+	width: 95%;
+	top: auto;
+	left: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#topBannerBlock:after { 
+    display:block; 
+    clear:both;  
+    height:0px; 
+    visibility:hidden; 
+    content:".";  
+}
+
+#topBannerBlock li {
+	float: left;
+	width: 50%;
+}
+
+
+
+
+
+
+
+
+/* ================================================================ *
+ * SP_BottomMENU
+ * ================================================================ */
+.bottomMenu {
+	background-color: #161E5F;
+	width: 100%;
+	position: relative;
+	clear: both;
+}
+.bottomMenu .bottomTitle  {
+	width: 100%;
+	height: 70px;
+	background-image: url(../img/sp_title_footer.png);
+	background-size : auto 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0px;
+	padding: 0px;
+}
+.bottomMenu ul {
+	width: 100%;
+}
+.bottomMenu li {
+	width: 50%;
+	padding: 10px;
+	float: left;
+	text-align: center;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+}
+.bottomMenu li:nth-child(5),
+.bottomMenu li:last-child {
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #666;
+}
+.bottomMenu li a {
+	color: #FFF;
+}
+.bottomMenu .sns  {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.bottomMenu .sns img  {
+	padding: 20px;
+	width: 70px;
+}
+
+
+/* ================================================================ *
+ * Footer
+ * ================================================================ */
+footer {
+	width: 100%;
+	bottom: auto;
+	position: relative;
+}
+footer .footerCnt {
+	width: 100%;
+}
+footer ul.ftBnr {
+	width: auto;
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	z-index: 1;
+}
+footer .ftL {
+	width: 90%;
+	float: none;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+footer ul.ftNav {
+	width: 100%;
+	margin-top: 10px;
+	z-index: 1;
+}
+/* Fooer Decotration------------------------------------------*/
+footer .footerLineDeco {
+	height: 47px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+/* Banner------------------------------------------ */
+
+.banner {
+	width: 100%;
+	font-size: 0px;
+	float: none;
+	z-index: 100;
+	position: absolute;
+	margin: 0px;
+	bottom: -25px;
+	left: auto;
+	top: auto;
+	right: auto;
+	padding: 0px;
+	height: auto;
+}
+.banner ul.ftBnr {
+	width: 70%;
+	padding: 0px;
+	float: none;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+.banner ul.ftBnr li {
+	margin: 0px;
+	padding: 3px;
+	display: inline-block;
+	float: left;
+}
+.banner ul.ftBnr li img {
+	height: 25px;
+	width: auto;
+}
+.banner .footerCnt ul.ftBnr li a img {
+	transition: 0.2s ease-out;
+	opacity: 1;
+	border: thin solid #999;
+}
+.banner .footerCnt ul.ftBnr li a:hover img {
+	transition: 0.2s ease-out;
+	opacity: 0.85;
+}
+
+
+
+/* Btn PageTop------------------------------------------*/
+#page-top {
+	right: 0px;
+	bottom: 15px;
+	position: fixed;
+	z-index: 9999;
+	background-image: url(../img/btn_pagetop_sp.png);
+	background-repeat: no-repeat;
+	display: block;
+	height: 39px;
+	width: 45px;
+	cursor: hand;
+	cursor:pointer;
+}
+
+
+
+/* タイトルスクロール時表示------------------------------------------*/
+#ttl-sp {
+	visibility:visible;
+	left: 0px;
+	top: 0px;
+	position: fixed;
+	z-index: 1;
+	background-color: #003;
+	width: 100%;
+	margin: 0px;
+	padding: 5px;
+	background-color: rgba(0,0,51,0.8);
+}
+#ttl-sp a {
+	text-decoration: none;
+	display: block;
+}
+#ttl-sp a:hover {
+	text-decoration: none;
+}
+#ttl-sp img {
+	width: 200px;
+}
+
+
+/* ================================================================ *
+ * BG
+ * ================================================================ */
+
+#Bg-content {
+	display: none;
+}
+
+
+/* ============================================
+	image replace
+============================================ */
+.bottomMenu .bottomTitle  {
+	font-size: 0;
+	*font-size:100%;
+	overflow: hidden;
+	text-indent: -8000em;
+}
+
+
+
+
+
+
+}
+@media screen and (max-width:480px) {
+	
+}
